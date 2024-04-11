@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('image/home.jpg');
+    background-size: 1512px 982px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.nav{
+    width: 80%;
+    height: 60px;
+    position: relative;
+    z-index: 9;
+}
+.container{
+    width: 80%;
+    position: absolute;
+    left: 42%;
+    transform: translateX(-50%);
+    height: 100%;
+}
+ 
+#object1 {
+    width: 400px;
+    height: 160px;
+    object-fit: none;
+    object-position: 36px 30px;
+} 
+
+#putih {
+    background: url('image/kotak putih.png') no-repeat;
+    background-size: 414px 265px;
+    padding: 2px 5px 10px 15px;
+} 
+
+.nav h1{
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Marck Script",cursive;
+    font-size: 38px;
+}
+ 
+/* 
+.filter{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+}*/
+ 
+.description{
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #000000;
+}
+.description h1{
+    font-size: 55px;
+    text-transform: uppercase;
+    font-family: 'Oleo Script', cursive;
+}
+.description p{
+    font-size: 35px;
+    font-family: 'Oleo Script', cursive;
+}
+@media screen and (max-width:700px){
+    .container{
+        width: 100%;
+    }
+    
+    .nav h1{
+        
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .description{
+        z-index: 0;
+        
+    }
+    .description h1{
+        font-size: 1.6rem;
+    }
+    .description p{
+        font-size: .7rem;
+    }
+}
